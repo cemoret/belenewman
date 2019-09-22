@@ -27,8 +27,8 @@ class Barra extends Component {
             <div className="col-12 p2p">
               <div className="h3 text-center p6p">
                 Barra Chocolate was a project created by Belén Newman and Carlos Moret in 2015.
-                Project that seeks to take chocolate to a purer level by making a chocolate from the
-                grain to the bar.
+                Project that seeks to take chocolate to a purer level by making a chocolate bean to
+                bar.
                 <br />
                 <br />
               </div>
