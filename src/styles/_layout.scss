@@ -214,6 +214,14 @@ btn-link:focus {
   height: 100% !important;
 }
 
+.height-85 {
+  height: 85% !important;
+}
+
+.height-85x2 {
+  height: 85% !important;
+}
+
 .box-color-1 {
   background-color: $black !important;
   height: 100% !important;
@@ -240,6 +248,19 @@ btn-link:focus {
 }
 
 // :IMAGE style
+
+.img-85 {
+  height: 85% !important;
+  width: auto !important;
+  // height: auto !important;
+  // background-size: 100% auto;
+  // background-size: contain !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  white-space: normal;
+  position: relative;
+  background-size: cover;
+}
 
 .img-100 {
   height: 100% !important;

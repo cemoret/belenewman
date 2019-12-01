@@ -6,7 +6,7 @@ class Footer extends Component {
     super(props);
     this.state = {
       RRSS: {
-        instagram: [{ name: 'instagram', http: `${'https://www.instagram.com/cemoret/'}` }],
+        instagram: [{ name: 'instagram', http: `${'https://www.instagram.com/belennewman/'}` }],
         arena: [{ name: 'are.na', http: `${'https://www.are.na/ce-moret/'}` }],
         github: [{ name: 'github', http: `${'https://www.github.com/cemoret/'}` }],
         twitter: [{ name: 'twitter', http: `${'https://www.twitter.com/carlosmoret/'}` }]
@@ -26,15 +26,15 @@ class Footer extends Component {
               <h5 className="d-inline text-nobrand px-2">{RRSS.instagram[0].name.toUpperCase()}</h5>
             </a>
 
-            <h5 className="d-inline px-2">•</h5>
+            {/* <h5 className="d-inline px-2">•</h5>
             <a rel="noopener noreferrer" target="_blank" href={RRSS.github[0].http}>
               <h5 className="d-inline text-nobrand px-2">{RRSS.github[0].name.toUpperCase()}</h5>
-            </a>
+            </a> */}
 
-            <h5 className="d-inline px-2">•</h5>
+            {/* <h5 className="d-inline px-2">•</h5>
             <a rel="noopener noreferrer" target="_blank" href={RRSS.arena[0].http}>
               <h5 className="d-inline text-nobrand px-2">{RRSS.arena[0].name.toUpperCase()}</h5>
-            </a>
+            </a> */}
             <h5 className="d-inline px-2">•</h5>
             <h5 className="d-inline px-2">© {date}</h5>
           </div>

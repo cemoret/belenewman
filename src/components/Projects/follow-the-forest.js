@@ -26,8 +26,8 @@ class FollowTheForest extends Component {
 
             <div className="col-12 p2p">
               <div className="h3 text-center p6p">
-                Follow the Fotrest was a new clothing rental brand back in 2015 that combine the
-                streetwere trend that was starting in Chile. We were tasked with positioning and
+                Follow the Forest was a new clothing rental brand back in 2015 that combine the
+                streetwear trend that was starting in Chile. We were tasked with positioning and
                 naming, as well as developing a robust website exploration.
                 <br />
                 <br />
