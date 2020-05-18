@@ -1,28 +1,32 @@
-import './styles/styles.css';
+import "./styles/styles.css";
+import React, { Component } from "react";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
+// import ScrollToTop from "./ScrollToTop";
 
-import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './Routes';
-import './App.css';
-import ScrollToTop from './ScrollToTop';
+const client = new ApolloClient({
+  uri: "https://cms.belenewman.com/graphql"
+});
 
 class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { prevPage: '' };
+    this.state = { prevPage: "" };
   }
 
   render() {
     return (
       <div>
-        <Router>
-          <div>
-            <ScrollToTop>
+        <ApolloProvider client={client}>
+          <Router>
+            <div>
               <Routes />
-            </ScrollToTop>
-          </div>
-        </Router>
+            </div>
+          </Router>
+        </ApolloProvider>
       </div>
     );
   }

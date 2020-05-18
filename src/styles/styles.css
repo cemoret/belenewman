@@ -4,6 +4,9 @@
 ========================================================================== */
 /* FRAMEWORK - Structure and layout files. Partials
 ========================================================================== */
+*, body {
+  font-family: "Barlow", sans-serif; }
+
 a {
   text-decoration: none !important; }
 
@@ -102,6 +105,7 @@ text-nobrand:hover {
   text-decoration: line-through !important; }
 
 .underline {
+  cursor: pointer;
   text-decoration: underline !important; }
 
 .text-middle {
@@ -173,12 +177,6 @@ btn-link:focus {
 .height-100x2 {
   height: 100% !important; }
 
-.height-85 {
-  height: 85% !important; }
-
-.height-85x2 {
-  height: 85% !important; }
-
 .box-color-1 {
   background-color: #000 !important;
   height: 100% !important; }
@@ -243,28 +241,6 @@ btn-link:focus {
   left: 25%;
   top: calc(15vh) !important;
   z-index: 1; }
-
-.img-3x4 {
-  width: auto;
-  height: auto;
-  padding-top: 125%;
-  background-size: 100% auto !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center !important;
-  white-space: normal !important;
-  position: relative !important; }
-
-.img-4x3 {
-  width: auto;
-  height: auto;
-  padding-top: 50%;
-  background-size: 100% auto !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center !important;
-  white-space: normal !important;
-  position: relative !important; }
 
 .shadow {
   border: 0 solid #dedede;
