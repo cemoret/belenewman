@@ -65,7 +65,7 @@ class Home extends Component {
     const { nodes } = this.props.data.posts;
     return nodes.map(({ id, work }, index) => {
       const { title, number, date } = work;
-      if(id_index === id) {
+      if (id_index === id) {
         return (
           <div
             key={index}
@@ -131,12 +131,12 @@ class Home extends Component {
       if (id_index === id) {
         return (
           <div key={index} id={id} className="row pb-5">
-            <div className="col-lg-9 col-12" >
+            <div className="col-lg-9 col-12">
               <Carousel gallery={work.gallery} />
             </div>
             <div className="col-lg-3 col-12">
-              <div className="t-bottom">
-                <h4>{work.description}</h4>
+              <div className="pt-3 t-bottom">
+                <h4 className="mb-0">{work.description}</h4>
               </div>
             </div>
           </div>
@@ -157,24 +157,22 @@ class Home extends Component {
   rederAbout() {
     const { RRSS } = this.state;
     return (
-      <div className="row p-2">
-        <div className="col-12">
-          <h4>About</h4>
-          <h4>
-            Bound is a biannual publication and digital platform that deals with
-            the world of matter and explores the connections between objects and
-            their owners. The project gives special importance to its
+      <div>
+        <h4>About</h4>
+        <h4>
+          Bound is a biannual publication and digital platform that deals with
+          the world of matter and explores the connections between objects and
+          their owners. The project gives special importance to its
+        </h4>
+        <a
+          rel="noopener noreferrer"
+          target="_blank"
+          href={RRSS.instagram[0].http}
+        >
+          <h4 className="d-inline text-nobrand underline  pt-5">
+            {RRSS.instagram[0].name}
           </h4>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={RRSS.instagram[0].http}
-          >
-            <h4 className="d-inline text-nobrand underline  pt-5">
-              {RRSS.instagram[0].name}
-            </h4>
-          </a>
-        </div>
+        </a>
       </div>
     );
   }
@@ -187,10 +185,10 @@ class Home extends Component {
       return (
         <div className="content-box-lg">
           <div className="row m-0">
-            <div className="col-lg-3 col-12 p-2" id={"left"}>
+            <div className="col-lg-3 col-12" id={"left"}>
               {this.rederLeft()}
             </div>
-            <div className="col-lg-9 col-12 p-2" id={"right"}>
+            <div className="col-lg-9 col-12" id={"right"}>
               {this.rederRight()}
             </div>
           </div>
