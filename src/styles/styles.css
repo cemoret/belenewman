@@ -275,6 +275,12 @@ btn-link:focus {
   border: 0 solid #dedede;
   box-shadow: 0 10px 85px 0 rgba(0, 0, 0, 0.3); }
 
+.swiper-button-next {
+  cursor: e-resize !important; }
+
+.swiper-button-prev {
+  cursor: w-resize !important; }
+
 @media (min-width: 992px) {
   #left {
     position: absolute;
