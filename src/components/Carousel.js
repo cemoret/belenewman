@@ -18,7 +18,11 @@ class Carousel extends Component {
         );
       });
     }
-    return <div>Without Images</div>;
+    return (
+      <div className="row m-0 p-2">
+        <div className="col-12">Without Images</div>
+      </div>
+    );
   };
 
   render() {

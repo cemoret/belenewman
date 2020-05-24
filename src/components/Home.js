@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
 
+// Queries
+// import queryWork from "../query/fetchWork";
+
 // Components
 import Carousel from "./Carousel";
 
@@ -62,9 +65,10 @@ class Home extends Component {
 
   renderIndex() {
     const { id_index } = this.state;
-    const { nodes } = this.props.data.posts;
-    return nodes.map(({ id, work }, index) => {
-      const { title, number, date } = work;
+    const { edges } = this.props.data.posts;
+    return edges.map(({ node }, index) => {
+      const { id } = node;
+      const { title, number, date } = node.work;
       if (id_index === id) {
         return (
           <div
@@ -125,18 +129,19 @@ class Home extends Component {
   }
 
   rederWorks() {
-    const { nodes } = this.props.data.posts;
+    const { edges } = this.props.data.posts;
     const { id_index } = this.state;
-    return nodes.map(({ work, id }, index) => {
+    return edges.map(({ node }, index) => {
+      const { id } = node;
       if (id_index === id) {
         return (
           <div key={index} id={id} className="row pb-5">
             <div className="col-lg-9 col-12">
-              <Carousel gallery={work.gallery} />
+              <Carousel gallery={node.work.gallery} />
             </div>
             <div className="col-lg-3 col-12">
               <div className="pt-3 t-bottom">
-                <h4 className="mb-0">{work.description}</h4>
+                <h4 className="mb-0">{node.work.description}</h4>
               </div>
             </div>
           </div>
@@ -145,7 +150,7 @@ class Home extends Component {
         return (
           <div key={index} className="row pb-5">
             <div className="col-lg-9 col-12">
-              <Carousel gallery={work.gallery} />
+              <Carousel gallery={node.work.gallery} />
             </div>
             <div className="col-lg-3 col-12"></div>
           </div>
@@ -207,18 +212,20 @@ class Home extends Component {
 }
 
 const queryPost = gql`
-  query MyQuery {
-    posts {
-      nodes {
-        id
-        title
-        work {
+  query GET_POSTS($first: Int) {
+    posts(first: $first) {
+      edges {
+        node {
+          id
           title
-          number
-          date
-          description
-          gallery {
-            src: mediaItemUrl
+          work {
+            title
+            number
+            date
+            description
+            gallery {
+              src: mediaItemUrl
+            }
           }
         }
       }
@@ -226,4 +233,6 @@ const queryPost = gql`
   }
 `;
 
-export default graphql(queryPost)(Home);
+export default graphql(queryPost, {
+  options: { variables: { first: 100 }, forceFetch: true }
+})(Home);
