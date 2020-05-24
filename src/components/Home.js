@@ -180,7 +180,15 @@ class Home extends Component {
   render() {
     const { loading } = this.props.data;
     if (loading) {
-      return <div>Loading...</div>;
+      return (
+        <div className="row p-2 m-0">
+          <div className="col-12">
+            <div className="float-left">
+              <h4>B</h4>
+            </div>
+          </div>
+        </div>
+      );
     } else {
       return (
         <div className="content-box-lg">

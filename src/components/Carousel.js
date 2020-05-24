@@ -9,13 +9,16 @@ class Carousel extends Component {
 
   renderImages = () => {
     const images = this.props.gallery;
-    return images.map(({ src }, index) => {
-      return (
-        <div key={index}>
-          <img src={src} className="img-content" alt="gallery" />
-        </div>
-      );
-    });
+    if (images) {
+      return images.map(({ src }, index) => {
+        return (
+          <div key={index}>
+            <img src={src} className="img-content" alt="gallery" />
+          </div>
+        );
+      });
+    }
+    return <div>Without Images</div>;
   };
 
   render() {

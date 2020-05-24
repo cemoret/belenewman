@@ -145,6 +145,41 @@ text-nobrand:hover {
   left: 0%;
 }
 
+// Animation
+.marquee {
+  width: 100%;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0px;
+  border-top: 1px solid black !important;
+
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 0%;
+  /* show the marquee just outside the paragraph */
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
 // Buttons
 
 button:focus,
