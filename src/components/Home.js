@@ -128,6 +128,16 @@ class Home extends Component {
     );
   }
 
+  async onClickWork(id) {
+    await this.setState({ id_index: id });
+    var element = document.getElementById(id);
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest"
+    });
+  }
+
   rederWorks() {
     const { edges } = this.props.data.posts;
     const { id_index } = this.state;
@@ -148,7 +158,11 @@ class Home extends Component {
         );
       } else {
         return (
-          <div key={index} className="row pb-5">
+          <div
+            key={index}
+            onClick={() => this.onClickWork(id)}
+            className="row pb-5"
+          >
             <div className="col-lg-9 col-12">
               <Carousel gallery={node.work.gallery} />
             </div>
