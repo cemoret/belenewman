@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { graphql } from "react-apollo";
 import gql from "graphql-tag";
+import * as compose from "lodash.flowright";
 
 // Queries
 // import queryWork from "../query/fetchWork";
@@ -175,14 +176,12 @@ class Home extends Component {
 
   rederAbout() {
     const { RRSS } = this.state;
+    const { content } = this.props.about.page.about;
+    const { title } = this.props.about.page;
     return (
       <div>
-        <h4>About</h4>
-        <h4>
-          Bound is a biannual publication and digital platform that deals with
-          the world of matter and explores the connections between objects and
-          their owners. The project gives special importance to its
-        </h4>
+        <h4 className="pb-2">{title}</h4>
+        <h4 className="pb-3">{content}</h4>
         <a
           rel="noopener noreferrer"
           target="_blank"
@@ -225,6 +224,18 @@ class Home extends Component {
   }
 }
 
+const queryAbout = gql`
+  query MyQuery {
+    page(id: "cGFnZToyMzA") {
+      id
+      title
+      about {
+        content
+      }
+    }
+  }
+`;
+
 const queryPost = gql`
   query GET_POSTS($first: Int) {
     posts(first: $first) {
@@ -247,6 +258,9 @@ const queryPost = gql`
   }
 `;
 
-export default graphql(queryPost, {
-  options: { variables: { first: 100 }, forceFetch: true }
-})(Home);
+export default compose(
+  graphql(queryPost, {
+    options: { variables: { first: 100 }, forceFetch: true }
+  }),
+  graphql(queryAbout, { name: "about" })
+)(Home);
