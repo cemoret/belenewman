@@ -27,7 +27,7 @@ class Revolver extends Component {
 
           {
             type: `video`,
-            img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=e5f31391-3def-4af7-857e-ddd28762e3ad`
+            img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=b8b9c8b7-a41f-4367-a75f-9a077a4f47fc`
           }
         ]
       }
@@ -172,7 +172,7 @@ class Revolver extends Component {
           </div>
           <div className="col-12 p-1">
             <img
-              src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/works%2FGRANDTOUR%2FGRANDTOUR(7).png?alt=media&token=a5e86e76-9637-4865-86b5-375d323434e6`}
+              src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/works%2FGRANDTOUR%2FGRANDTOUR(7).png?alt=media&token=b29307fa-eaad-4d24-b889-b8c8f3a43f51`}
               className="img-cover"
               alt="gallery"
             />

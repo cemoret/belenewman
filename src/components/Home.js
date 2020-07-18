@@ -60,7 +60,7 @@ class Apocalypse extends Component {
 
             {
               type: `video`,
-              img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=e5f31391-3def-4af7-857e-ddd28762e3ad`
+              img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=b8b9c8b7-a41f-4367-a75f-9a077a4f47fc`
             }
           ]
         },
@@ -200,7 +200,7 @@ class Apocalypse extends Component {
     return works.map(
       ({ link, name, type, year, city, content, cover }, index) => {
         return (
-          <div key={index} className="row pb-5">
+          <div key={index} className="row py-5">
             {this.renderWork(cover, link)}
 
             <div className="col-12 px-0">
@@ -281,7 +281,7 @@ class Apocalypse extends Component {
       <div className="content-box-lg">
         <div className="row m-0 p-5">
           <div className="col-lg-12 pb-5 px-0">{this.renderHeader()}</div>
-          <div className="col-lg-12 pb-3 px-0">
+          <div className="col-lg-12 px-0">
             <h4 className="regular">Featured Works</h4>
           </div>
           <div className="col-lg-12">{this.rederFeatureWork()}</div>
