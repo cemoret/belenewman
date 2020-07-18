@@ -5,10 +5,18 @@
 /* FRAMEWORK - Structure and layout files. Partials
 ========================================================================== */
 *, body {
-  font-family: "Barlow", sans-serif; }
+  font-family: "Merriweather", serif; }
 
 a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  color: black !important; }
+
+#footerlink {
+  color: black !important; }
+
+#footerlink:hover {
+  color: black !important;
+  text-decoration: underline !important; }
 
 input:focus {
   outline: none !important; }
@@ -50,7 +58,7 @@ input:focus {
   font-weight: 400 !important; }
 
 .font-serif {
-  font-family: "Frank Ruhl Libre", sans-serif; }
+  font-family: "Merriweather", serif; }
 
 h1,
 .h1 {
@@ -77,12 +85,14 @@ h3,
 h4,
 .h4 {
   font-size: 16px !important;
+  font-weight: 400 !important;
   white-space: pre-wrap; }
 
 h5,
 .h5 {
-  font-size: 12px !important;
-  line-height: 1.2 !important;
+  font-size: 13px !important;
+  line-height: 1.5 !important;
+  font-weight: 200 !important;
   white-space: pre-wrap; }
 
 .text-nobrand,
@@ -186,6 +196,11 @@ btn-link:focus {
 
 .img-loader {
   position: relative; }
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .img-content {
   width: 100%;
@@ -367,7 +382,9 @@ btn-link:focus {
   .height-100 {
     height: 55% !important; }
   .height-100x2 {
-    height: 100% !important; } }
+    height: 100% !important; }
+  .hide-md {
+    display: none !important; } }
 
 /* MODULES - Re-usable site elements.
 ========================================================================== */
