@@ -27,7 +27,7 @@ class Revolver extends Component {
 
           {
             type: `video`,
-            img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=b8b9c8b7-a41f-4367-a75f-9a077a4f47fc`
+            img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/videos%2FGRANTOUR_Portada.mp4?alt=media&token=12c39a69-3acb-412f-960f-68376d5ca209`
           }
         ]
       }
