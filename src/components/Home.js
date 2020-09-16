@@ -43,10 +43,10 @@ class Home extends Component {
     return (
       <div
         className={`transition-cover
-          ${hover === 0 && "col-sm-6 col-12 px-0"}
-          ${hover === 1 && "col-sm-3 col-12 px-0"}
-          ${hover === 2 && "col-sm-3 col-12 px-0"}
-          ${hover === null && "col-sm-4 col-12 px-0"}
+          ${hover === 0 && "col-md-6 col-12 px-0"}
+          ${hover === 1 && "col-md-3 col-12 px-0"}
+          ${hover === 2 && "col-md-3 col-12 px-0"}
+          ${hover === null && "col-md-4 col-12 px-0"}
         `}
         onMouseEnter={() => this.onMouseEnterReference(left)}
         onMouseLeave={() => this.onMouseLeaveReference()}
@@ -89,10 +89,10 @@ class Home extends Component {
     return (
       <div
         className={`transition-cover
-          ${hover === 0 && "col-sm-3 col-12 px-0"}
-          ${hover === 1 && "col-sm-6 col-12 px-0"}
-          ${hover === 2 && "col-sm-3 col-12 px-0"}
-          ${hover === null && "col-sm-4 col-12 px-0"}
+          ${hover === 0 && "col-md-3 col-12 px-0"}
+          ${hover === 1 && "col-md-6 col-12 px-0"}
+          ${hover === 2 && "col-md-3 col-12 px-0"}
+          ${hover === null && "col-md-4 col-12 px-0"}
         `}
         onMouseEnter={() => this.onMouseEnterReference(center)}
         onMouseLeave={() => this.onMouseLeaveReference()}
@@ -136,10 +136,10 @@ class Home extends Component {
     return (
       <div
         className={`transition-cover
-          ${hover === 0 && "col-sm-3 col-12 px-0"}
-          ${hover === 1 && "col-sm-3 col-12 px-0"}
-          ${hover === 2 && "col-sm-6 col-12 px-0"}
-          ${hover === null && "col-sm-4 col-12 px-0"}
+          ${hover === 0 && "col-md-3 col-12 px-0"}
+          ${hover === 1 && "col-md-3 col-12 px-0"}
+          ${hover === 2 && "col-md-6 col-12 px-0"}
+          ${hover === null && "col-md-4 col-12 px-0"}
         `}
         onMouseEnter={() => this.onMouseEnterReference(right)}
         onMouseLeave={() => this.onMouseLeaveReference()}

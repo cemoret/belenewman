@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Components
 import Carousel from "../../components/works/Carousel";
@@ -54,7 +54,7 @@ class Works extends Component {
   renderCarousel(works, listNumber) {
     var workSelected = works[listNumber];
     return (
-      <div className="col-12 px-0">
+      <div className="">
         <Carousel workSelected={workSelected} />
         <ul className="cover-list">
           <WorkList listNumber={listNumber} works={works} />
@@ -68,7 +68,21 @@ class Works extends Component {
 
     return (
       <div className="content-box-lg">
-        <div className="row m-0">{this.renderCarousel(works, listNumber)}</div>
+        <div className="row m-0">
+          <div className="col-11 px-0">
+            {this.renderCarousel(works, listNumber)}
+          </div>
+          <div className="col-1ym px-0" style={{ backgroundColor: "#EEEEEE" }}>
+            <Link to={"/cases"}>
+              <h3 className="menu-v">Cases</h3>
+            </Link>
+          </div>
+          <div className="col-1ym px-0" style={{ backgroundColor: "#E1E1E1" }}>
+            <Link to={"/about"}>
+              <h3 className="menu-v">About</h3>
+            </Link>
+          </div>
+        </div>
       </div>
     );
   }
