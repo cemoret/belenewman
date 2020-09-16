@@ -91,7 +91,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 30px !important;
+  font-size: 22px !important;
   line-height: 1.3 !important;
   font-weight: $regular;
   white-space: pre-wrap;
@@ -116,6 +116,15 @@ h5,
 text-nobrand:active,
 text-nobrand:hover {
   color: $black !important;
+}
+
+.menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10000;
 }
 
 .menu-font {
@@ -240,8 +249,31 @@ btn-link:focus {
 
 .img-cover {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+// .m-footer {
+//   margin-bottom: 5vh !important;
+// }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.transition-cover {
+  transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
 }
 
 .img-content {
@@ -256,13 +288,154 @@ btn-link:focus {
   height: 400px !important;
 }
 
-.swiper-container {
-  // background-color: blue;
-  // height: 40vh !important;
-  // color: white;
-  // text-align: center;
+
+li {
+  display: inline;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  color: $black;
+  text-decoration: none;
+}
+
+.cover-list {
+  z-index: 1000 !important;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------
+    CAROUSEL SLIDER STYLE
+----------------------------------------------------- */
+
+.carousel {
+  cursor: grab !important;
+  cursor: -webkit-grab !important;
+}
+
+.carousel-img {
+  width: 100% !important;
+  min-width: 50% !important;
+  height: 100vh !important;
+  // min-height: 500px !important;
+  object-fit: cover;
+}
+
+.carousel:active {
+  cursor: grabbing !important;
+  cursor: -webkit-grabbing !important;
+}
+
+.slick-slide {
+  height: 100vh !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: '' !important;
+}
+
+.slick-prev, .slick-next {
+  width: 50% !important;
+  height: 100vh !important;
+  z-index: 1;
+}
+
+.slick-prev svg, .slick-next svg{
+  display: none;
+  height: 20px !important;
+  z-index: 1;
+}
+
+.slick-prev {
+  left: 0px !important;
+  float: left;
+}
+
+.slick-next {
+  right: 0px !important;
+  float: right;
+}
+
+.slider-arrow-prev {
+  position: absolute !important;
+  padding-top: 120% !important;
+  left: 0 !important;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+  width: 20px !important;
+}
+
+.slider-arrow-next {
+  display: block;
+  position: absolute !important;
+  margin: auto;
+  float: right !important;
+  align-items: center !important;
+  width: 100%;
+  height: 10%;
+}
+
+.slider-arrow-next .pathColor,
+.slider-arrow-prev .pathColor {
+  fill: $white !important;
+}
+
+.slick-arrow {
+  display: block !important;
+  position: absolute !important;
+}
+.slick-dots {
+  bottom: 7px !important;
+  height: 40px !important;
+  z-index: 10 !important;
+}
+
+.slick-dots li button {
+  content: none !important;
+  height: 30px !important;
+  margin-top: 20px !important;
+}
+
+.slick-dots li {
+  margin: 0 0.5% !important;
+  width: 8% !important;
+}
+
+.slick-dots li button::before,
+.slick-dots li button::after,
+.slick-dots li button:link {
+  z-index: 100;
+  color: $color-text;
+  background: $color-background;
+  box-shadow: 0 1px 14px 0 white;
+  border-radius: 4px;
+  height: 2px !important;
+  width: 100% !important;
+  content: '' !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.slick-arrow .slick-prev {
+  position: absolute;
+}
+
+.slick-arrow .slick-next  {
+  right: 0;
+}
+
+/* ---------------------------------------------------
+    END CAROUSEL SLIDER STYLE
+----------------------------------------------------- */
 .swiper-button-next, .swiper-button-prev {
   top: 0 !important;
   width: 50% !important;

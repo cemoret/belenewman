@@ -4,7 +4,8 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./Routes";
-// import ScrollToTop from "./ScrollToTop";
+import ScrollToTop from "./ScrollToTop";
+import GAListener from "./HOC/GAListener";
 
 const client = new ApolloClient({
   uri: "https://cms.belenewman.com/graphql"
@@ -22,9 +23,13 @@ class App extends Component {
       <div>
         <ApolloProvider client={client}>
           <Router>
-            <div>
-              <Routes />
-            </div>
+            <GAListener trackingId="UA-178023853-1">
+              <div>
+                <ScrollToTop>
+                  <Routes />
+                </ScrollToTop>
+              </div>
+            </GAListener>
           </Router>
         </ApolloProvider>
       </div>
