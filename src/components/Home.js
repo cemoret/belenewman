@@ -40,6 +40,16 @@ class Home extends Component {
   renderLeftSide(hover) {
     const left = 0;
 
+    const image_left = [
+      {
+        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
+      },
+      {
+        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+      }
+    ];
+
+    var random_img = Math.floor(Math.random() * 2 + 1) - 1;
     return (
       <div
         className={`transition-cover
@@ -55,7 +65,7 @@ class Home extends Component {
           <div className="center">
             {hover === 0 ? (
               <img
-                src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_left_1.png?alt=media&token=a310d3d6-2ce1-423f-b3b6-9d60384085fd`}
+                src={image_left[random_img].img}
                 className="img-cover"
                 alt="gallery"
               />
@@ -65,7 +75,7 @@ class Home extends Component {
                 style={{ backgroundColor: "#FFFFFF" }}
               ></div>
             )}
-            <h3 className="centered">Works</h3>
+            <h3 className="centered">Selected</h3>
           </div>
         </Link>
       </div>
@@ -75,7 +85,7 @@ class Home extends Component {
   renderCenterSide(hover) {
     const center = 1;
 
-    const image_right = [
+    const image_center = [
       {
         img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
       },
@@ -101,7 +111,7 @@ class Home extends Component {
           <div className="img-container">
             {hover === 1 ? (
               <img
-                src={image_right[random_img].img}
+                src={image_center[random_img].img}
                 className="img-cover"
                 alt="gallery"
               />
@@ -124,10 +134,13 @@ class Home extends Component {
 
     const image_right = [
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
       },
       {
         img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
+      },
+      {
+        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
       }
     ];
 
