@@ -68,7 +68,7 @@ class Revolver extends Component {
   renderContent() {
     return (
       <div className="pw-5">
-        <h1 className="text-center">Revolver</h1>
+        <h1 className="hbig text-center">Revolver</h1>
         <h4 className="text-center pb-3">Case Study</h4>
 
         <img
@@ -114,7 +114,7 @@ class Revolver extends Component {
           great service and value to their customers.
         </h2>
 
-        <h2 className="medium pb-3">Brief</h2>
+        <h1 className="pb-3">Brief</h1>
         <h3 className="pb-5">
           Create a restaurant concepts under the imaginary of the nouvelle vague
           of France of the 50s. Gold, plants and glamor are essential parts of
@@ -127,7 +127,7 @@ class Revolver extends Component {
           within the collective imagination of the people who visit the place.
         </h3>
 
-        <h2 className="medium pb-3">Benchmark</h2>
+        <h1 className="pb-3">Benchmark</h1>
         <h3 className="pb-5">
           The idea itself is quite simple: present this bistro as something
           friendly, with seasonal ingredients and local consumption, as the most
@@ -138,7 +138,7 @@ class Revolver extends Component {
           className="img-auto"
           alt="gallery"
         />
-        <h2 className="medium pt-5 pb-3">Teamwork</h2>
+        <h1 className="pt-5 pb-3">Teamwork</h1>
         <h3 className="pb-5">
           For months we developed teamwork by visiting the construction site to
           see the colors of the walls, the ceramics on the floor, the lighting.
@@ -171,7 +171,7 @@ class Revolver extends Component {
           />
         </div>
 
-        <h2 className="medium pt-5 pb-3">User Experience and Branding</h2>
+        <h1 className="pt-5 pb-3">User Experience and Branding</h1>
 
         <h3 className="pb-5">
           We work in teams, inside and outside of Comer & Beber. Collaboration
@@ -207,9 +207,7 @@ class Revolver extends Component {
           />
         </div>
 
-        <h2 className="medium pt-5 pb-3">
-          Marketing & Communication Strategist
-        </h2>
+        <h1 className="pt-5 pb-3">Marketing & Communication Strategist</h1>
 
         <h3 className="pb-3">
           The image had to be recognizable. Social networks should gain strength
@@ -231,7 +229,7 @@ class Revolver extends Component {
           type="video/mov"
         ></video>
 
-        <h2 className="medium pt-5 pb-3">User Centered Design</h2>
+        <h1 className="pt-5 pb-3">User Centered Design</h1>
 
         <h3 className="pb-5">
           To engage users and develop a sense of togetherness with the company,
@@ -261,7 +259,7 @@ class Revolver extends Component {
           type="video/mov"
         ></video>
 
-        <h2 className="medium pt-5 pb-3">Lean Process</h2>
+        <h1 className="pt-5 pb-3">Lean Process</h1>
 
         <h3 className="pb-5">
           With the creative team we carry out tastings of new dishes. The

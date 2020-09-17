@@ -91,9 +91,17 @@ input:focus {
   font-family: $font-serif;
 }
 
+
+.hbig {
+  font-size: 2em !important;
+  color: $color-text;
+  font-weight: $regular;
+  white-space: pre-wrap;
+}
+
 h1,
 .h1 {
-  font-size: 2.33333em !important;
+  font-size: 1.75em !important;
   color: $color-text;
   font-weight: $regular;
   white-space: pre-wrap;
