@@ -16,17 +16,108 @@ class Works extends Component {
           name: "Practice",
           work: [
             {
-              alt: "image name",
+              alt: "practice-work-1",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%201.png?alt=media&token=f35faf07-265b-4f3d-a8d8-4200a9da87dd`
             },
             {
-              alt: "image name",
+              alt: "practice-work-2",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%202.png?alt=media&token=eb27e566-c9e6-4b94-a047-23881f7ccd58`
+            },
+            {
+              alt: "practice-work-3",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%203.png?alt=media&token=6a576a13-3a1e-4ff7-92b8-2aa060e7715e`
+            },
+            {
+              alt: "practice-work-4",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%204.png?alt=media&token=fd9d693f-31fc-4956-8bb5-a6a921382303`
+            },
+            {
+              alt: "practice-work-5",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%205.png?alt=media&token=2371bebb-e89f-434a-a520-f8267cfed70f`
+            },
+            {
+              alt: "practice-work-6",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%206.png?alt=media&token=741a88d0-222b-4855-91d0-68758e9feed1`
+            },
+            {
+              alt: "practice-work-7",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%207.png?alt=media&token=2b3cdb9b-aca7-4353-a9d6-5d3bea63a6ce`
+            },
+            {
+              alt: "practice-work-8",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%208.png?alt=media&token=93b3f68d-930d-40b9-b4ad-291279782e03`
+            },
+            {
+              alt: "practice-work-9",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%209.png?alt=media&token=4095680c-76a3-497e-80ba-002a43412fd4`
+            },
+            {
+              alt: "practice-work-10",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice%2010.png?alt=media&token=feac4f5e-78d2-4f5a-8193-67629ef24b4e`
+            },
+            {
+              alt: "practice-work-11",
+              type: "video",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fpractice%2Fpractice.mov?alt=media&token=f2c1d9b4-5055-4cd6-a351-0845f8c187b9`
             }
           ]
         },
+        {
+          name: "From",
+          work: [
+            {
+              alt: "from-practice-work-1",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%201.png?alt=media&token=fdf5e947-94a8-49ea-96b1-ba69c26a31d6`
+            },
+            {
+              alt: "from-practice-work-2",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%202.png?alt=media&token=3babbaa7-fcec-4155-9b4c-541c9baed650`
+            },
+            {
+              alt: "from-practice-work-3",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%203.png?alt=media&token=116c761d-73ad-49c8-8ad9-3b6b819ff907`
+            },
+            {
+              alt: "from-practice-work-4",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%205.png?alt=media&token=b5bedd77-9e2f-446d-a11c-4ac9ecf4db62`
+            },
+            {
+              alt: "from-practice-work-5",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%205.png?alt=media&token=b5bedd77-9e2f-446d-a11c-4ac9ecf4db62`
+            },
+            {
+              alt: "from-practice-work-6",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%206.png?alt=media&token=39237ead-4f0c-406d-b806-71bae6d38725`
+            },
+            {
+              alt: "from-practice-work-7",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%206.png?alt=media&token=39237ead-4f0c-406d-b806-71bae6d38725`
+            },
+            {
+              alt: "from-practice-work-8",
+              type: "image",
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Ffrom%2Ffrom%208.png?alt=media&token=eb1042de-a03a-4399-a1de-09e0f1a09dab`
+            }
+          ]
+        },
+
         {
           name: "Revolver",
           work: [

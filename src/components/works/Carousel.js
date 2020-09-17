@@ -65,7 +65,9 @@ class Carousel extends Component {
         return (
           <div key={index} style={{ position: "relative" }}>
             <video
-              controls
+              loop
+              autoPlay
+              muted
               className="carousel-img"
               src={src}
               type="video/mov"

@@ -48,7 +48,7 @@ class WorkList extends Component {
             ) : (
               <span />
             )}
-            ({index + 1})&nbsp;
+            ( 0{index + 1} )&nbsp;
             {name}
           </h4>
         </li>
