@@ -44,6 +44,13 @@ class Carousel extends Component {
     };
   }
 
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.workSelected.name !== prevProps.workSelected.name) {
+      this.slider.slickGoTo(0);
+    }
+  }
+
   componentDidMount() {
     window.scrollTo(0, 0);
     this.setState({ numberSlide: this.props.workSelected.length });

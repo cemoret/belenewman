@@ -237,7 +237,7 @@ class Works extends Component {
   }
 
   callbackFunction = childData => {
-    this.setState({ listNumber: childData });
+    this.setState({ listNumber: childData, slickGoTo: 0 });
   };
 
   renderCarousel(works, listNumber) {
