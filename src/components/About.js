@@ -19,11 +19,21 @@ class About extends Component {
     return (
       <div className="row m-0 about">
         <div className="col-md-8 col-12 p-5">
+          <h2 className="pb-3">
+            Senior Designer, Art Director & UX/UI{" "}
+            <span role="img" aria-label="hand-emoji">
+              👋🏻
+            </span>
+          </h2>
           <h2 className="pb-5">
-            Creative processes are always connected with references. That’s why
-            we are making a visual archive through a digital publication
-            allowing all to know the process of creative people, and their
-            development through references.
+            My work has been based on contact with people and generating
+            experiences for them. Developing a structure with a solid conceptual
+            foundation, creating a design with a focus on typography, image,
+            color and composition. My job is to be able to communicate and
+            generate content in collaboration with other trades through design.
+            I have good teamwork and problem solving skills. I am interested in
+            developing emotionally charged projects, through the transfer of
+            knowledge, storytelling and thus finding new ways to design.
           </h2>
 
           <a
@@ -73,19 +83,23 @@ class About extends Component {
           <div className="col-md-1 col-12 px-0">
             <div className="row m-0 fixed-md-top">
               <div
-                className="col-md-6 col-12 px-0 h100v"
+                className="col-md-6 col-12 px-0"
                 style={{ backgroundColor: "#EEEEEE" }}
               >
                 <Link to={"/works"}>
-                  <h3 className="menu-v m-0">Selected</h3>
+                  <div className="h100v">
+                    <h3 className="menu-v m-0">Selected</h3>
+                  </div>
                 </Link>
               </div>
               <div
-                className="col-md-6 col-12 px-0 h100v"
+                className="col-md-6 col-12 px-0"
                 style={{ backgroundColor: "#E1E1E1" }}
               >
                 <Link to={"/cases"}>
-                  <h3 className="menu-v m-0">Cases</h3>
+                  <div className="h100v">
+                    <h3 className="menu-v m-0">Cases</h3>
+                  </div>
                 </Link>
               </div>
             </div>

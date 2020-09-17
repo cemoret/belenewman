@@ -12,12 +12,12 @@ class Cases extends Component {
         {
           name: `Practice`,
           link: `/cases/practice`,
-          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice_case_cover.png?alt=media&token=64c57d26-5fb5-4e65-a83b-01b08f6fc73a`
         },
         {
           name: `Revolver`,
           link: `/cases/revolver`,
-          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver_case_cover.png?alt=media&token=f7a3ff63-5b27-4f3c-a76c-40ea2cb2d329`
         }
       ]
     };
@@ -39,18 +39,19 @@ class Cases extends Component {
     const { cases } = this.state;
 
     return cases.map(({ name, link, image }, index) => {
-      const { listNumber, listSelected } = this.state;
+      // const { listNumber, listSelected } = this.state;
       return (
         <div
           key={index}
-          className="col-6"
+          className="col-md-6 col-12 pt-3 pb-5"
           onMouseEnter={() => this.onMouseEnterLi(index)}
           onMouseLeave={() => this.onMouseLeaveLi()}
         >
           <Link to={link}>
             <img src={image} className="img-case" alt="gallery" />
-
-            <h4 className="m-0 p-1">
+            <h2 className="text-center m-0 pt-2">{name}</h2>
+            <h4 className="text-center m-0 pt-1">Case Study</h4>
+            {/*<h4 className="m-0 p-1">
               {listNumber === index || listSelected === index ? (
                 <span>→&nbsp;</span>
               ) : (
@@ -58,7 +59,7 @@ class Cases extends Component {
               )}
               ({index + 1})&nbsp;
               {name}
-            </h4>
+            </h4>*/}
           </Link>
         </div>
       );
@@ -74,19 +75,23 @@ class Cases extends Component {
             style={{ backgroundColor: "#E1E1E1" }}
           >
             <Link to={"/works"}>
-              <h3 className="menu-v m-0">Selected</h3>
+              <div className="h100v">
+                <h3 className="menu-v m-0">Selected</h3>
+              </div>
             </Link>
           </div>
 
           <div className="col-md-11 col-12 px-0 pb-50 pt-50" id="scrolly">
-            <div className="row m-0 p-5">{this.renderCases()}</div>
+            <div className="row m-0 pw-5">{this.renderCases()}</div>
           </div>
           <div
             className="col-1ym fixed-md-botton px-0"
             style={{ backgroundColor: "#EEEEEE" }}
           >
             <Link to={"/about"}>
-              <h3 className="menu-v m-0">About</h3>
+              <div className="h100v">
+                <h3 className="menu-v m-0">About</h3>
+              </div>
             </Link>
           </div>
         </div>

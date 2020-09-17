@@ -181,6 +181,10 @@ text-nobrand:hover {
   padding-top: 0px !important;
 }
 
+.pw-5 {
+  padding: 3rem;
+}
+
 .menu-v {
   transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
   position: absolute;
@@ -337,16 +341,14 @@ btn-link:focus {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  cursor: pointer;
   transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
 
 .img-case {
   width: 100%;
-  height: 50vh;
+  height: auto;
   object-fit: cover;
-  cursor: pointer;
   transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
@@ -358,6 +360,14 @@ btn-link:focus {
 .img-container {
   position: relative;
   text-align: center;
+}
+
+.img-auto {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
 }
 
 // .m-footer {
@@ -430,13 +440,17 @@ ul li a {
   object-fit: cover;
 }
 
+.carousel-img-n {
+  width: 100% !important;
+  min-width: 50% !important;
+  height: auto !important;
+  // min-height: 500px !important;
+  object-fit: cover;
+}
+
 .carousel:active {
   cursor: grabbing !important;
   cursor: -webkit-grabbing !important;
-}
-
-.slick-slide {
-  height: 100vh !important;
 }
 
 .slick-prev:before,
@@ -446,7 +460,7 @@ ul li a {
 
 .slick-prev, .slick-next {
   width: 50% !important;
-  height: 100vh !important;
+  height: 100% !important;
   z-index: 1;
 }
 
@@ -727,6 +741,12 @@ ul li a {
 
 @media (max-width: 767px) and (min-width: 0px) {
 
+  .pw-5 {
+    padding: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .menu {
     display: none;
   }
@@ -755,6 +775,7 @@ ul li a {
     text-align: center;
     height: 50px !important;
     line-height: 50px !important;
+    top: 0;
   }
 
   .h100v {

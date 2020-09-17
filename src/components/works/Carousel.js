@@ -45,7 +45,6 @@ class Carousel extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // Typical usage (don't forget to compare props):
     if (this.props.workSelected.name !== prevProps.workSelected.name) {
       this.slider.slickGoTo(0);
     }
@@ -65,7 +64,7 @@ class Carousel extends Component {
   }
 
   renderImages() {
-    const { workSelected } = this.props;
+    const { workSelected, css } = this.props;
 
     return workSelected.work.map(({ alt, type, src }, index) => {
       if (type === "video") {
@@ -75,7 +74,7 @@ class Carousel extends Component {
               loop
               autoPlay
               muted
-              className="carousel-img"
+              className={css ? { css } : "carousel-img"}
               src={src}
               type="video/mov"
             ></video>
@@ -87,7 +86,7 @@ class Carousel extends Component {
           <img
             key={index}
             src={src}
-            className="carousel-img"
+            className={css ? css : "carousel-img"}
             alt={alt}
             style={{ cursor: "pointer" }}
           />
@@ -97,15 +96,16 @@ class Carousel extends Component {
   }
 
   render() {
+    const { autoPlay, speed, autoplaySpeed } = this.props;
     const settings = {
       dots: false,
       infinite: true,
       pauseOnDotsHover: true,
       pauseOnFocus: true,
       pauseOnHover: true,
-      speed: 10,
-      autoplay: false,
-      autoplaySpeed: 300,
+      speed: speed,
+      autoplay: autoPlay,
+      autoplaySpeed: autoplaySpeed,
       className: "carousel",
       slidesToShow: 1,
       slidesToScroll: 1,

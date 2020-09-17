@@ -37,19 +37,41 @@ class Home extends Component {
     );
   }
 
+  renderFileType(cover, random) {
+    if (cover.type === "video") {
+      return (
+        <video
+          loop
+          autoPlay
+          muted
+          className="img-cover"
+          src={cover[random].src}
+          type="video/mov"
+        ></video>
+      );
+    }
+    return (
+      <div>
+        <img src={cover[random].src} className="img-cover" alt="gallery" />
+      </div>
+    );
+  }
+
   renderLeftSide(hover) {
     const left = 0;
 
-    const image_left = [
+    const cover = [
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
       },
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
       }
     ];
 
-    var random_img = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * 2 + 1) - 1;
     return (
       <div
         className={`transition-cover
@@ -64,11 +86,7 @@ class Home extends Component {
         <Link to={"/works"}>
           <div className="center">
             {hover === 0 ? (
-              <img
-                src={image_left[random_img].img}
-                className="img-cover"
-                alt="gallery"
-              />
+              this.renderFileType(cover, random)
             ) : (
               <div
                 className="img-cover"
@@ -85,16 +103,18 @@ class Home extends Component {
   renderCenterSide(hover) {
     const center = 1;
 
-    const image_center = [
+    const cover = [
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
       },
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
       }
     ];
 
-    var random_img = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * 2 + 1) - 1;
 
     return (
       <div
@@ -110,11 +130,7 @@ class Home extends Component {
         <Link to={"/cases"}>
           <div className="img-container">
             {hover === 1 ? (
-              <img
-                src={image_center[random_img].img}
-                className="img-cover"
-                alt="gallery"
-              />
+              this.renderFileType(cover, random)
             ) : (
               <div
                 className="img-cover img-container"
@@ -132,19 +148,19 @@ class Home extends Component {
   renderRightSide(hover) {
     const right = 2;
 
-    const image_right = [
+    const cover = [
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
       },
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
       },
       {
-        img: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
       }
     ];
 
-    var random_img = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * 2 + 1) - 1;
 
     return (
       <div
@@ -160,11 +176,7 @@ class Home extends Component {
         <Link to={"/about"}>
           <div className="img-container">
             {hover === 2 ? (
-              <img
-                src={image_right[random_img].img}
-                className="img-cover"
-                alt="gallery"
-              />
+              this.renderFileType(cover, random)
             ) : (
               <div
                 className="img-cover img-container"
