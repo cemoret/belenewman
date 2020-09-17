@@ -77,6 +77,35 @@ class Revolver extends Component {
           alt="gallery"
         />
 
+        <div className="row pt-5">
+          <div className="col-md-4 col-12">
+            <h3>Revolver Bistró</h3>
+            <h4>Size: 325 people</h4>
+            <h4>Locstion: Santiago, Chile</h4>
+          </div>
+
+          <div className="col-md-4 col-12">
+            <h3>Creative Team:</h3>
+            <h4>- Arturo Murua (Director) </h4>
+            <h4>- Ignacio Murua (CEO)</h4>
+            <h4>- María Belén de Landea (COO)</h4>
+            <h4>- Matías Caamaño (Project Manager)</h4>
+            <h4>- Camila Moreno (Executive Chef)</h4>
+            <h4>- Matías Lopez (Architect)</h4>
+            <h4>- Belén Newman (Creative Director)</h4>
+          </div>
+
+          <div className="col-md-4 col-12">
+            <h3>Subcontracts:</h3>
+            <h4>- POP diseño</h4>
+            <h4>- Imprenta PROCOLOR</h4>
+            <h4>- Decorag S.A.</h4>
+            <h4>- Printlab digital</h4>
+            <h4>- Julin Serra </h4>
+            <h4>- Ricardo Vivallo </h4>
+          </div>
+        </div>
+
         <h2 className="py-5">
           Comer & Beber, is a hospitality business in Santiago, Chile, that has
           6 restaurants. Seasonal food with national products, crossing with
@@ -85,58 +114,39 @@ class Revolver extends Component {
           great service and value to their customers.
         </h2>
 
+        <h2 className="medium pb-3">Brief</h2>
+        <h3 className="pb-5">
+          Create a restaurant concepts under the imaginary of the nouvelle vague
+          of France of the 50s. Gold, plants and glamor are essential parts of
+          the restaurant's branding process: a sublime bistro. The objective was
+          to create a practical and at the same time emotional restaurant,
+          suggesting the idea of ​​modern French design, which leads us to
+          larger imageries such as the furniture, the lighting fixture and the
+          decorative elements typical of the industrial design of that time.
+          These values ​​not only want to give context but also seek to remain
+          within the collective imagination of the people who visit the place.
+        </h3>
+
         <h2 className="medium pb-3">Benchmark</h2>
         <h3 className="pb-5">
-          The restaurant shows specific concepts, under the imaginary of the
-          nouvelle vague of France of the 50s. Gold, plants and glamor are
-          essential parts of the restaurant's branding process: a sublime
-          bistro. The objective was to create a practical and at the same time
-          emotional restaurant, suggesting the idea of ​​modern French design,
-          which leads us to larger imageries such as the furniture, the lighting
-          fixture and the decorative elements typical of the industrial design
-          of that time. These values ​​not only want to give context but also
-          seek to remain within the collective imagination of the people who
-          visit the place.
-          <br />
-          <br />
           The idea itself is quite simple: present this bistro as something
           friendly, with seasonal ingredients and local consumption, as the most
-          obvious and reasonable way to live. For months we developed teamwork
-          by visiting the construction site to see the colors of the walls, the
-          ceramics on the floor, the lighting. Also on the other hand, we
-          develop tastings of dishes for the food menú, we analyze the type of
-          dishes, utensils, and glassware that would go, such as the uniforms of
-          the waiters and the aesthetics in terms of decoration, among others.
-          In this sense, the identification of the concept became more evident.
+          obvious and reasonable way to live.
         </h3>
         <img
           src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver%2Fbenchmark.png?alt=media&token=b9e2f484-bfce-41a6-b53c-ffca5c5b49b6`}
           className="img-auto"
           alt="gallery"
         />
-
-        <h3 className="py-5">
-          The restaurant shows specific concepts, under the imaginary of the
-          nouvelle vague of France of the 50s. Gold, plants and glamor are
-          essential parts of the restaurant's branding process: a sublime
-          bistro. The objective was to create a practical and at the same time
-          emotional restaurant, suggesting the idea of ​​modern French design,
-          which leads us to larger imageries such as the furniture, the lighting
-          fixture and the decorative elements typical of the industrial design
-          of that time. These values ​​not only want to give context but also
-          seek to remain within the collective imagination of the people who
-          visit the place.
-          <br />
-          <br />
-          The idea itself is quite simple: present this bistro as something
-          friendly, with seasonal ingredients and local consumption, as the most
-          obvious and reasonable way to live. For months we developed teamwork
-          by visiting the construction site to see the colors of the walls, the
-          ceramics on the floor, the lighting. Also on the other hand, we
-          develop tastings of dishes for the food menú, we analyze the type of
-          dishes, utensils, and glassware that would go, such as the uniforms of
-          the waiters and the aesthetics in terms of decoration, among others.
-          In this sense, the identification of the concept became more evident.
+        <h2 className="medium pt-5 pb-3">Teamwork</h2>
+        <h3 className="pb-5">
+          For months we developed teamwork by visiting the construction site to
+          see the colors of the walls, the ceramics on the floor, the lighting.
+          Also on the other hand, we develop tastings of dishes for the food
+          menú, we analyze the type of dishes, utensils, and glassware that
+          would go, such as the uniforms of the waiters and the aesthetics in
+          terms of decoration, among others. In this sense, the identification
+          of the concept became more evident.
         </h3>
 
         <img
@@ -161,7 +171,9 @@ class Revolver extends Component {
           />
         </div>
 
-        <h3 className="py-5">
+        <h2 className="medium pt-5 pb-3">User Experience and Branding</h2>
+
+        <h3 className="pb-5">
           We work in teams, inside and outside of Comer & Beber. Collaboration
           with them was to perfect the visual imagery that we had created and
           thus develop a dialogue between the restaurant; with all the team
@@ -194,7 +206,12 @@ class Revolver extends Component {
             autoplaySpeed={3000}
           />
         </div>
-        <h3 className="pb-5">
+
+        <h2 className="medium pt-5 pb-3">
+          Marketing & Communication Strategist
+        </h2>
+
+        <h3 className="pb-3">
           The image had to be recognizable. Social networks should gain strength
           since nowadays the communication in high and the creation of content
           is very important. That is why we needed a narrative that was able to
@@ -214,7 +231,9 @@ class Revolver extends Component {
           type="video/mov"
         ></video>
 
-        <h3 className="py-5">
+        <h2 className="medium pt-5 pb-3">User Centered Design</h2>
+
+        <h3 className="pb-5">
           To engage users and develop a sense of togetherness with the company,
           one of the first steps was to promote the 'User Centered Design'
           philosophy. In doing so, we wanted to directly engage people as part
@@ -242,7 +261,9 @@ class Revolver extends Component {
           type="video/mov"
         ></video>
 
-        <h3 className="py-5">
+        <h2 className="medium pt-5 pb-3">Lean Process</h2>
+
+        <h3 className="pb-5">
           With the creative team we carry out tastings of new dishes. The
           continuous rotation of the ingredients of the season, the influence of
           the sales, generates constant iteration of the menu. In my case, in
