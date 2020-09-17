@@ -27,7 +27,7 @@ class Footer extends Component {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href={`https://www.instagram.com/belenewman`}
+              href={`https://www.instagram.com/belennewman`}
               className="pl-5"
             >
               <span className="h3">↗&nbsp;&nbsp;</span>

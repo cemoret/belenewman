@@ -101,8 +101,19 @@ class Revolver extends Component {
             <h4>- Imprenta PROCOLOR</h4>
             <h4>- Decorag S.A.</h4>
             <h4>- Printlab digital</h4>
-            <h4>- Julin Serra </h4>
-            <h4>- Ricardo Vivallo </h4>
+            <h4>
+              - Carlos Molina&nbsp;
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href={`https://estudiocc.cl/`}
+                className="link"
+              >
+                (estudiocc.cl)
+              </a>
+            </h4>
+            <h4>- Julin Serra</h4>
+            <h4>- Ricardo Vivallo</h4>
           </div>
         </div>
 
@@ -304,7 +315,7 @@ class Revolver extends Component {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href={`https://www.instagram.com/belenewman`}
+                href={`https://www.instagram.com/belennewman`}
                 className="pl-5"
               >
                 <span className="h3">↗&nbsp;&nbsp;</span>
