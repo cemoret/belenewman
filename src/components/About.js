@@ -18,16 +18,19 @@ class About extends Component {
 
   renderAbout() {
     return (
-      <div className="row m-0 about">
-        <div className="col-md-8 col-12 p-5">
-          <h1 className="pb-3">Belen Newman</h1>
-          <h2 className="pb-3">
+      <div className="row m-0 about" id="scrolly">
+        <div className="col-12 p-5 pb-3">
+          <h2 className="pb-3">Belén Newman</h2>
+          <h3 className="">
             Senior Designer, Art Director & UX/UI
             <span className="h4" role="img" aria-label="hand-emoji">
               &nbsp;&nbsp;👋🏻
             </span>
-          </h2>
-          <h2 className="pb-5">
+          </h3>
+
+          <h3 className="">7 years of experience</h3>
+          <h3 className="">Based in Barcelona</h3>
+          <h3 className="pt-5">
             My work has been based on contact with people and generating
             experiences for them. Developing a structure with a solid conceptual
             foundation, creating a design with a focus on typography, image,
@@ -36,18 +39,28 @@ class About extends Component {
             I have good teamwork and problem solving skills. I am interested in
             developing emotionally charged projects, through the transfer of
             knowledge, storytelling and thus finding new ways to design.
-          </h2>
+          </h3>
         </div>
 
-        <div className="col-md-4 col-12 p-5">
-          <h3 className="pb-3">Software:</h3>
-          <h3>Sketch App</h3>
-          <h3>Figma</h3>
-          <h3>Invision</h3>
-          <h3>Invision Studio</h3>
-          <h3>Adobe Illustrator</h3>
-          <h3>Lightroom</h3>
+        <div className="col-md-6 col-12 px-5">
+          <h3 className="pb-3">Education:</h3>
+          <h4>- Graphic designer | Universidad Diego Portales</h4>
+          <h4>- Master’s Degree in Editorial Design | ELISAVA</h4>
+
+          <h3 className="py-3">Portfolio:</h3>
+          <h4>- Design by Belén Newman</h4>
+          <h4>- Code by Carlos Moret</h4>
         </div>
+
+        <div className="col-md-6 col-12 px-5">
+          <h3 className="pb-3">Software:</h3>
+          <h4>- Figma, Sketch & Adobe XD</h4>
+          <h4>- Invision</h4>
+          <h4>- Illustrator</h4>
+          <h4>- InDesign</h4>
+          <h4>- Photoshop & Lightroom</h4>
+        </div>
+
         <div className="p-5">
           <Footer />
         </div>
