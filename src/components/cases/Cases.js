@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 // Components
+import Footer from "../Footer";
 
 class Cases extends Component {
   constructor(props) {
@@ -12,12 +13,12 @@ class Cases extends Component {
         {
           name: `Practice`,
           link: `/cases/practice`,
-          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice_case_cover.png?alt=media&token=64c57d26-5fb5-4e65-a83b-01b08f6fc73a`
+          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice_cover_case.png?alt=media&token=3da2d8c4-5913-4ebe-a459-80044c788548`
         },
         {
           name: `Revolver`,
           link: `/cases/revolver`,
-          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver_case_cover.png?alt=media&token=f7a3ff63-5b27-4f3c-a76c-40ea2cb2d329`
+          image: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver_cover_case.png?alt=media&token=415f72de-eedd-41dc-9065-6a949a360ebe`
         }
       ]
     };
@@ -49,8 +50,8 @@ class Cases extends Component {
         >
           <Link to={link}>
             <img src={image} className="img-case" alt="gallery" />
-            <h2 className="text-center m-0 pt-2">{name}</h2>
-            <h4 className="text-center m-0 pt-1">Case Study</h4>
+            <h3 className="text-center m-0 pt-3">{name}</h3>
+            <h5 className="text-center m-0 pt-1">Case Study</h5>
             {/*<h4 className="m-0 p-1">
               {listNumber === index || listSelected === index ? (
                 <span>→&nbsp;</span>
@@ -72,7 +73,7 @@ class Cases extends Component {
         <div className="row m-0">
           <div
             className="col-1ym fixed-md-top px-0"
-            style={{ backgroundColor: "#E1E1E1" }}
+            style={{ backgroundColor: "#F9F9F9" }}
           >
             <Link to={"/works"}>
               <div className="h100v">
@@ -82,11 +83,14 @@ class Cases extends Component {
           </div>
 
           <div className="col-md-11 col-12 px-0 pb-50 pt-50" id="scrolly">
-            <div className="row m-0 pw-5">{this.renderCases()}</div>
+            <div className="row m-0 pw-5">
+              {this.renderCases()}
+              <Footer />
+            </div>
           </div>
           <div
             className="col-1ym fixed-md-botton px-0"
-            style={{ backgroundColor: "#EEEEEE" }}
+            style={{ backgroundColor: "#F0F2F8" }}
           >
             <Link to={"/about"}>
               <div className="h100v">

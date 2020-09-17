@@ -25,20 +25,8 @@ class Home extends Component {
     this.setState({ hover: null });
   }
 
-  renderMenu() {
-    return (
-      <div className="col-12">
-        <div className="menu">
-          <Link to={"/"}>
-            <h4 className="text-center">Belen Newman</h4>
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   renderFileType(cover, random) {
-    if (cover.type === "video") {
+    if (cover[random].type === "video") {
       return (
         <video
           loop
@@ -62,16 +50,40 @@ class Home extends Component {
 
     const cover = [
       {
-        type: `image`,
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
+        type: `video`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_1.mov?alt=media&token=c93f005a-31f0-4509-955f-e535d191f725`
       },
       {
         type: `image`,
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_2.png?alt=media&token=e5fc345e-6b13-4257-8fd0-c87f2fe4c927`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_3.png?alt=media&token=537f1dec-87ba-4729-89a4-beb1629cbd09`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_4.png?alt=media&token=856a22c9-b6f5-4316-8d50-239bcd236b89`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_5.png?alt=media&token=ba9f31f1-d6d5-4f49-9f0b-aef14fe6c7c0`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_6.png?alt=media&token=d133c213-1fff-49c2-9364-98f9d619b631`
+      },
+      {
+        type: `video`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_7.png?alt=media&token=c40637d0-d32c-48f7-a07b-c10e145033dd`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_selected_8.png?alt=media&token=ba89567b-e7d7-446c-84a5-38d86c101a86`
       }
     ];
 
-    var random = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * cover.length + 1) - 1;
     return (
       <div
         className={`transition-cover
@@ -88,12 +100,10 @@ class Home extends Component {
             {hover === 0 ? (
               this.renderFileType(cover, random)
             ) : (
-              <div
-                className="img-cover"
-                style={{ backgroundColor: "#FFFFFF" }}
-              ></div>
+              <div className="img-cover" style={{ backgroundColor: "#FFFFFF" }}>
+                <h3 className="centered">Selected</h3>
+              </div>
             )}
-            <h3 className="centered">Selected</h3>
           </div>
         </Link>
       </div>
@@ -106,15 +116,23 @@ class Home extends Component {
     const cover = [
       {
         type: `image`,
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_cases_1.png?alt=media&token=54711f4f-7d12-4db3-85a0-d305accb8b15`
       },
       {
         type: `image`,
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_cases_2.png?alt=media&token=c91af8f3-3e7b-4f50-9ee0-5d43f713ad5f`
+      },
+      {
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_cases_3.png?alt=media&token=547fcdab-4f6f-4b88-879d-9ed2ef9a66c5`
+      },
+      {
+        type: `video`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_cases_4.mov?alt=media&token=00613867-e7fa-4dfb-96dd-7e448c9aee59`
       }
     ];
 
-    var random = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * cover.length + 1) - 1;
 
     return (
       <div
@@ -134,11 +152,11 @@ class Home extends Component {
             ) : (
               <div
                 className="img-cover img-container"
-                style={{ backgroundColor: "#C4C4C4" }}
-              ></div>
+                style={{ backgroundColor: "#D9DFF6" }}
+              >
+                <h3 className="centered">Cases</h3>
+              </div>
             )}
-
-            <h3 className="centered">Cases</h3>
           </div>
         </Link>
       </div>
@@ -150,17 +168,20 @@ class Home extends Component {
 
     const cover = [
       {
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Frevolver%2Frevolver1.png?alt=media&token=2a8c5a08-ac9c-490b-9995-ae85cb09290a`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_about_1.png?alt=media&token=7d61531b-4c08-45ef-a33a-610c12142e90`
       },
       {
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_2.png?alt=media&token=13e1a05a-96a9-4adc-ab54-4e6e7a306cbf`
+        type: `video`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_about_2.mov?alt=media&token=a4528c67-8666-4461-abc8-4065be04b82f`
       },
       {
-        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_right_1.png?alt=media&token=51999346-5391-4927-b54a-3e53f38feacb`
+        type: `image`,
+        src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cover%2Fcover_about_3.png?alt=media&token=54dd087a-419e-4137-bd82-48e666380a84`
       }
     ];
 
-    var random = Math.floor(Math.random() * 2 + 1) - 1;
+    var random = Math.floor(Math.random() * cover.length + 1) - 1;
 
     return (
       <div
@@ -180,11 +201,11 @@ class Home extends Component {
             ) : (
               <div
                 className="img-cover img-container"
-                style={{ backgroundColor: "#FFFF" }}
-              ></div>
+                style={{ backgroundColor: "#F0F2F8" }}
+              >
+                <h3 className="centered">About</h3>
+              </div>
             )}
-
-            <h3 className="centered">About</h3>
           </div>
         </Link>
       </div>
@@ -195,11 +216,10 @@ class Home extends Component {
     const { hover } = this.state;
     return (
       <div className="content-box-lg">
-        <div className="row m-footer">
+        <div className="row m-0">
           {this.renderLeftSide(hover)}
           {this.renderCenterSide(hover)}
           {this.renderRightSide(hover)}
-          {this.renderMenu()}
         </div>
       </div>
     );

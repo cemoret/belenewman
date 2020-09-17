@@ -44,12 +44,11 @@ class WorkList extends Component {
         >
           <h4 className="m-0 p-1">
             {listNumber === index || listSelected === index ? (
-              <span>→&nbsp;</span>
+              <span>→&nbsp;&nbsp;</span>
             ) : (
               <span />
             )}
-            ( 0{index + 1} )&nbsp;
-            {name}
+            ( 0{index + 1} )&nbsp; &nbsp;{name}
           </h4>
         </li>
       );

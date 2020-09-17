@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 // Components
+import Footer from "./Footer";
 
 class About extends Component {
   constructor(props) {
@@ -19,10 +20,11 @@ class About extends Component {
     return (
       <div className="row m-0 about">
         <div className="col-md-8 col-12 p-5">
+          <h1 className="pb-3">Belen Newman</h1>
           <h2 className="pb-3">
-            Senior Designer, Art Director & UX/UI{" "}
-            <span role="img" aria-label="hand-emoji">
-              👋🏻
+            Senior Designer, Art Director & UX/UI
+            <span className="h4" role="img" aria-label="hand-emoji">
+              &nbsp;&nbsp;👋🏻
             </span>
           </h2>
           <h2 className="pb-5">
@@ -35,32 +37,6 @@ class About extends Component {
             developing emotionally charged projects, through the transfer of
             knowledge, storytelling and thus finding new ways to design.
           </h2>
-
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href={`https://www.instagram.com/belenewman`}
-          >
-            <span className="h2">↗&nbsp;</span>
-            <h2 className="inline-block link">Instagram</h2>
-          </a>
-
-          <a
-            href="mailto:belenewman@gmail.com?subject = Feedback&body = Message"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="px-5"
-          >
-            <span className="h2">↗&nbsp;</span>
-            <h2 className="inline-block link">Email</h2>
-          </a>
-
-          <div className="pt-5">
-            <Link to={`/`}>
-              <span className="h2">←&nbsp;</span>
-              <h2 className=" inline-block link">Back</h2>
-            </Link>
-          </div>
         </div>
 
         <div className="col-md-4 col-12 p-5">
@@ -71,6 +47,9 @@ class About extends Component {
           <h3>Invision Studio</h3>
           <h3>Adobe Illustrator</h3>
           <h3>Lightroom</h3>
+        </div>
+        <div className="p-5">
+          <Footer />
         </div>
       </div>
     );
@@ -84,7 +63,7 @@ class About extends Component {
             <div className="row m-0 fixed-md-top">
               <div
                 className="col-md-6 col-12 px-0"
-                style={{ backgroundColor: "#EEEEEE" }}
+                style={{ backgroundColor: "#FFFFFF" }}
               >
                 <Link to={"/works"}>
                   <div className="h100v">
@@ -94,7 +73,7 @@ class About extends Component {
               </div>
               <div
                 className="col-md-6 col-12 px-0"
-                style={{ backgroundColor: "#E1E1E1" }}
+                style={{ backgroundColor: "#D9DFF6" }}
               >
                 <Link to={"/cases"}>
                   <div className="h100v">

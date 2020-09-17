@@ -58,13 +58,6 @@ a {
   text-decoration: none !important;
   color: black !important; }
 
-#footerlink {
-  color: black !important; }
-
-#footerlink:hover {
-  color: black !important;
-  text-decoration: underline !important; }
-
 input:focus {
   outline: none !important; }
 
@@ -333,6 +326,12 @@ btn-link:focus {
   transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
 
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 100%;
+  z-index: 1000000; }
+
 .centered {
   position: absolute;
   top: 50%;
@@ -368,8 +367,8 @@ ul li a {
 .cover-list {
   z-index: 1000 !important;
   position: fixed;
-  left: 1em;
-  top: 1em;
+  left: 1rem;
+  top: 1rem;
   text-align: left;
   cursor: pointer; }
 

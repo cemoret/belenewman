@@ -292,7 +292,7 @@ class Revolver extends Component {
         <div className="row m-0">
           <div
             className="col-1ym fixed-md-top px-0"
-            style={{ backgroundColor: "#E1E1E1" }}
+            style={{ backgroundColor: "#F9F9F9" }}
           >
             <Link to={"/works"}>
               <h3 className="menu-v m-0">Selected</h3>
@@ -304,7 +304,7 @@ class Revolver extends Component {
           </div>
           <div
             className="col-1ym fixed-md-botton px-0"
-            style={{ backgroundColor: "#EEEEEE" }}
+            style={{ backgroundColor: "#F0F2F8" }}
           >
             <Link to={"/about"}>
               <h3 className="menu-v m-0">About</h3>

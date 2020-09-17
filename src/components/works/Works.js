@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Components
 import Carousel from "../../components/works/Carousel";
 import WorkList from "../../components/works/WorkList";
+import Footer from "../Footer";
 
 class Works extends Component {
   constructor(props) {
@@ -192,54 +193,54 @@ class Works extends Component {
           name: "Apocalypse  |  Book",
           work: [
             {
-              alt: "Apocalypse image work 1",
+              alt: "Apocalypse-work-1",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%201.png?alt=media&token=d1b123aa-77e2-4b24-b2c8-756628e45cfc`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%201.png?alt=media&token=2a8231b9-5cee-430d-b7a1-5a68c0ab6814`
             },
             {
-              alt: "Apocalypse image work 2",
+              alt: "Apocalypse-work-2",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%202.png?alt=media&token=9c4d5eef-92a9-45fc-937e-eca38eb51d29`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%202.png?alt=media&token=7bce783f-89cb-4fec-a8ab-4d1dc31e12f5`
             },
             {
-              alt: "Apocalypse image work 3",
+              alt: "Apocalypse-work-3",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%203.png?alt=media&token=3e3e6cd7-4dc8-4e44-9da0-ca9a5d2ef933`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%203.png?alt=media&token=558552f1-a8c5-4763-8b35-0647286dfd0f`
             },
             {
-              alt: "Apocalypse image work 4",
+              alt: "Apocalypse-work-4",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%204.png?alt=media&token=8882c37e-5402-44b8-901a-2ea719b59cff`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%204.png?alt=media&token=66472415-5822-4475-9730-e4afdf1356fc`
             },
             {
-              alt: "Apocalypse image work 5",
+              alt: "Apocalypse-work-5",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%205.png?alt=media&token=4bbb150f-0123-4211-bb49-51db34c245c5`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%205.png?alt=media&token=098026a6-33f7-4206-8085-482a00c852c5`
             },
             {
-              alt: "Apocalypse image work 6",
+              alt: "Apocalypse-work-6",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%206.png?alt=media&token=60cc8c3b-0eed-4592-bbe6-a1a419018f7b`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%206.png?alt=media&token=f45bf0d2-c56a-4283-81ae-4f53929b8a2b`
             },
             {
-              alt: "Apocalypse image work 7",
+              alt: "Apocalypse-work-7",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%207.png?alt=media&token=f6e52c7e-4275-4bab-9893-3c8b64c75231`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%207.png?alt=media&token=1a6acf81-2a43-4f19-b134-b758a81c24dc`
             },
             {
-              alt: "Apocalypse image work 8",
+              alt: "Apocalypse-work-8",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%208.png?alt=media&token=a38bf45c-4d4c-4953-8d8c-9b6088a95561`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%208.png?alt=media&token=7c388f2a-d37d-4e1b-a1a1-e72d692b3b42`
             },
             {
-              alt: "Apocalypse image work 9",
+              alt: "Apocalypse-work-9",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%209.png?alt=media&token=30714f1f-2ba8-4888-b99e-b4063e1c80d6`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%209.png?alt=media&token=bb6e9fe0-3e7d-4b00-866d-a248fd2b52da`
             },
             {
-              alt: "Apocalypse image work 10",
+              alt: "Apocalypse-work-10",
               type: "image",
-              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%2010.png?alt=media&token=241841f3-987d-49ea-991e-0ea7628287b9`
+              src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/selected%2Fapocalypse%2Fapocalypse%2010.png?alt=media&token=422897c4-ec6a-45c0-859a-82110205a13c`
             }
           ]
         },
@@ -334,18 +335,6 @@ class Works extends Component {
     );
   }
 
-  renderMenu() {
-    return (
-      <div className="col-12">
-        <div className="menu">
-          <Link to={"/"}>
-            <h4 className="text-center">Belen Newman</h4>
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
   render() {
     const { works, listNumber } = this.state;
 
@@ -354,14 +343,17 @@ class Works extends Component {
         <div className="row m-0">
           <div className="col-md-11 col-12 px-0">
             {this.renderCarousel(works, listNumber)}
-            {this.renderMenu()}
+
+            <div className="px-5">
+              <Footer />
+            </div>
           </div>
 
           <div className="col-md-1 col-12 px-0">
             <div className="row m-0 fixed-md-botton">
               <div
                 className="col-md-6 col-12 px-0"
-                style={{ backgroundColor: "#EEEEEE" }}
+                style={{ backgroundColor: "#D9DFF6" }}
               >
                 <Link to={"/cases"}>
                   <div className="h100v">
@@ -371,7 +363,7 @@ class Works extends Component {
               </div>
               <div
                 className="col-md-6 col-12 px-0"
-                style={{ backgroundColor: "#E1E1E1" }}
+                style={{ backgroundColor: "#F0F2F8" }}
               >
                 <Link to={"/about"}>
                   <div className="h100v">
