@@ -19,7 +19,7 @@ class About extends Component {
   renderAbout() {
     return (
       <div className="row m-0 about" id="scrolly">
-        <div className="col-12 p-5 pb-3">
+        <div className="col-lg-10 col-12 p-5 pb-3">
           <h2 className="pb-3">Belén Newman</h2>
           <h3 className="">
             Senior Designer, Art Director & UX/UI
