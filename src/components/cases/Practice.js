@@ -19,7 +19,7 @@ class Practice extends Component {
           {
             alt: "component_gallery-2",
             type: "image",
-            src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2Fcomponent_gallery%2Fcomponents10.png?alt=media&token=1fa8b4c5-8468-4564-9ff5-3ca716cc34d8`
+            src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2Fcomponent_gallery%2Fcomponents2.png?alt=media&token=a4248300-9e07-4e18-8e90-1dccc82a4b79`
           },
           {
             alt: "component_gallery-3",
@@ -44,7 +44,7 @@ class Practice extends Component {
           {
             alt: "component_gallery-7",
             type: "image",
-            src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2Fcomponent_gallery%2Fcomponents6.png?alt=media&token=aa878be7-b406-4cb3-a43d-7a3f7ae00520`
+            src: `https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2Fcomponent_gallery%2Fcomponents7.png?alt=media&token=22196a32-a11d-4d65-9169-ea4c95d966ff`
           },
           {
             alt: "component_gallery-8",
