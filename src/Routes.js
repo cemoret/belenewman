@@ -7,6 +7,7 @@ import Works from "./components/works/Works";
 import Cases from "./components/cases/Cases";
 import About from "./components/About";
 
+import Practice from "./components/cases/Practice";
 import Revolver from "./components/cases/Revolver";
 
 // import Error from "./components/Error";
@@ -19,7 +20,7 @@ export default () => {
         <Route exact path="/works" component={Works} />
         <Route exact path="/cases" component={Cases} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/cases/practice" component={Revolver} />
+        <Route exact path="/cases/practice" component={Practice} />
         <Route exact path="/cases/revolver" component={Revolver} />
         {/*
         <Route exact path="/error" component={Error} />

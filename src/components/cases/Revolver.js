@@ -72,7 +72,7 @@ class Revolver extends Component {
         <h4 className="text-center pb-3">Case Study</h4>
 
         <img
-          src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver%2Fcover.png?alt=media&token=7ce1ace1-819f-4dce-8641-4c3e44eeb88d`}
+          src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver%2Frevolver_cover_case.png?alt=media&token=8f4ba2b3-ce21-4b87-826d-e5b734c8b6ce`}
           className="img-auto"
           alt="gallery"
         />
@@ -81,7 +81,7 @@ class Revolver extends Component {
           <div className="col-md-4 col-12">
             <h3>Revolver Bistró</h3>
             <h4>Size: 325 people</h4>
-            <h4>Locstion: Santiago, Chile</h4>
+            <h4>Location: Santiago, Chile</h4>
           </div>
 
           <div className="col-md-4 col-12">
