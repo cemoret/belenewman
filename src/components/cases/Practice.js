@@ -258,12 +258,12 @@ class Practice extends Component {
 
         <h1 className="pt-5">Team, Methodology and Process</h1>
         <h3 className="py-3">
-          Using various techniques with which we study the user experience,
+          Using various techniques with which we study user experience,
           observing how it affects the relationship between people and the
           product, to understand usability and accessibility problems they
           encounter. With this, we manage to propose an effective and intuitive
-          interaction, reflecting the detected user needs and developing a
-          design consistent with the brand's communication objectives.
+          interaction, reflecting detected user needs and developing a design
+          consistent with brand objectives.
         </h3>
 
         <h1 className="pt-3">Research</h1>
@@ -332,9 +332,9 @@ class Practice extends Component {
 
         <h1 className="pt-5">Surveys</h1>
         <h3 className="py-3">
-          33 surveys in total were conducted with different professionals in the
-          creative area and among students in the sector, focusing on finding
-          the connection that had with the fact of saving links.
+          33 surveys in total were conducted with different creative
+          professionals and students, focusing on finding connections with
+          saving links.
         </h3>
         <h2 className="py-3">Insights</h2>
         <h3 className="py-3">
@@ -342,7 +342,7 @@ class Practice extends Component {
           <br />
           42.4% links save weekly
           <br />
-          60.6% web pages and articles save
+          60.6% web pages and articles saved
           <br />
           <br />
           Tools most used during teamwork
@@ -362,10 +362,10 @@ class Practice extends Component {
 
         <h1 className="pt-5">Benchmark</h1>
         <h3 className="pt-3">
-          We implement an analysis of different platforms and tools with similar
+          We implement an analysis different platforms and tools with similar
           characteristics and/or functionalities to our core idea. We focus on
-          finding their differentiating elements and what makes them stand out.
-          Then classifying into larger groups.
+          finding their differentiating elements that what makes them stand out
+          and categorize them into larger groups.
         </h3>
         <img
           src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2FBenchmark.png?alt=media&token=c3eac158-4ae7-4de4-942e-08dd851a0d00`}
@@ -402,9 +402,9 @@ class Practice extends Component {
 
         <h1 className="pt-5">User Journey</h1>
         <h3 className="py-3">
-          From the scenarios we develop a User Journey with one of our user
-          personas, Paula, to create a deeper graphic story with the aim of
-          discovering the Insights throughout a user experience.
+          From the scenarios created we develop a User Journey with one of our
+          user personas, Paula, to create a deeper graphic story with the aim of
+          discovering Insights throughout a user experience.
         </h3>
 
         <img
@@ -481,10 +481,10 @@ class Practice extends Component {
 
         <h1 className="pt-5">Information Architecture</h1>
         <h3 className="py-3">
-          Throughout our process we have noted the continuous evolution of the
-          tool. That is why we have implemented a flexible and dynamic
-          architecture to allow constant updating as the user continues to play
-          and experiment with content and the software.
+          Throughout our process we have noted a continuous evolution of the
+          tool. We have implemented a flexible and dynamic architecture to allow
+          constant updating as the user continues to play and experiment with
+          content and the software.
         </h3>
         <img
           src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2FInformationArchitecture.png?alt=media&token=e7e252f6-8a75-4d91-b943-7fd71c5c4648`}
@@ -506,23 +506,22 @@ class Practice extends Component {
         <h1 className="pt-5">Brand</h1>
         <h3 className="py-3">
           We seek an aesthetic based on the essential: explaining what the tool
-          and the objective are about. To achieve this, we articulate our
+          and the objectives are about. To achieve this, we articulate our
           personality around 3 concepts: Clarity, friendly and contemporary. Our
           voice reflects how our user sees himself, that is why we want to speak
           like a friend who every day has something new to tell and show to
           them.
           <br />
           <br />
-          We propose a minimalist UI. We wanted the design to be simple,
-          interactive and contemporary. We designed a flexible modular system
-          that allows you to quickly save, organize and share content. The
-          design achieved is clean, fresh, and non-invasive.
+          We propose a minimalist UI. We want a simple, interactive and
+          contemporary with a flexible modular system that allows you to quickly
+          save, organize and share content. The design achieved is clean, fresh,
+          and non-invasive.
           <br />
           <br />
-          The typeface selected is "Inter" due to the versatility it offers and
-          the ease of reading in print and digitally. The predominant colors
-          don't break into the tool, so its main purpose is to highlight the
-          different parts.
+          The typeface selected is "Inter" due to the versatility Offers ease of
+          digital and print readability. The predominant colors don't break into
+          the tool, so its main purpose is to highlight the different parts.
         </h3>
         <img
           src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2FbrandIdentity.png?alt=media&token=d0e4eed6-758f-410f-9535-bac9ae3e618f`}
@@ -532,13 +531,13 @@ class Practice extends Component {
 
         <h1 className="pt-5">Components</h1>
         <h3 className="py-3">
-          The transformation of a link into a visual block is part of the value
-          proposition provided by the tool. The customization of the blocks is
-          achieved with two functionalities in the block. One with the customize
-          button and the other adding a file.
+          The link transformation into a visual block is part of the value
+          proposition provided by the tool. The blocks customization is achieved
+          with two functionalities in the block, customize appearance and adding
+          a file.
           <br />
           <br />
-          The customization is achieved through 3 combinable states:
+          The customization is achieved through 3 interchangeable states:
           <br />
           <br />
           1.1 Typography
@@ -548,7 +547,7 @@ class Practice extends Component {
           1.3 Emojis
         </h3>
         <br />
-        <div className="">
+        <div className="pb-5">
           <Carousel
             workSelected={this.state.component_gallery}
             css={"carousel-img-n"}
@@ -557,6 +556,15 @@ class Practice extends Component {
             autoplaySpeed={3000}
           />
         </div>
+
+        <video
+          loop
+          autoPlay
+          muted
+          className={"carousel-img-n"}
+          src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Fpractice%2FPrototype.mov?alt=media&token=79969de3-ca93-4b5c-a30a-2794ba03898d`}
+          type="video/mov"
+        ></video>
 
         <h1 className="pt-5">Marketing</h1>
         <h3 className="py-3">
@@ -575,9 +583,8 @@ class Practice extends Component {
           references.
           <br />
           <br />
-          For this reason, the referents are linked with the platform, taking
-          advantage of the validation of the influencers of the creative
-          industry.
+          For this reason, references are linked with the platform, taking
+          advantage of influencers validation in the creative industry.
         </h3>
 
         <video

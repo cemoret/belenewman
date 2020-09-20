@@ -132,10 +132,10 @@ class Revolver extends Component {
           restaurant's branding process: a sublime bistro. The objective was to
           create a practical but at the same time emotional restaurant,
           suggesting the idea of ​​modern French design, which leads us to
-          larger imageries such as the furniture, the lighting fixture and the
+          larger imageries such as the furniture, lighting fixture and
           decorative elements that are typical industrial design of that time.
-          These values ​​not only want to give context but also seek to remain
-          within the people collective imagination who visit the place.
+          These values ​​give context and also seek to remain within people
+          collective imagination who visit the place.
         </h3>
 
         <h1 className="pb-3">Benchmark</h1>
@@ -153,12 +153,12 @@ class Revolver extends Component {
         <h3 className="pb-5">
           We have been working as a team for more than 5 months, visiting the
           under construction site to view construction details, troubleshoot and
-          prioritize tasks. Also on the other hand, We develop a series of
-          tastings with the design team and members of the kitchen staff to try
-          the best options for the main menu, we analyze the type of dishes,
-          utensils, and glassware that would go, such as the uniforms of the
-          waiters and the aesthetics in terms of decoration, among others. In
-          this sense, the identification of the concept became more evident.
+          prioritize tasks. Also on the other hand, we develop a series of
+          tastings with the design team and kitchen staff to try the best
+          options for the main menu. We analyze the type of dishes, utensils,
+          and glassware that would go, such as the waiters uniforms and the
+          aesthetics in terms of decoration, among others. In this sense, the
+          concept identification became more evident.
         </h3>
 
         <img
@@ -192,12 +192,12 @@ class Revolver extends Component {
           <br />
           <br />
           We use bright and bold colors to align the concept we execute. The
-          typographic logo is based on the signwriting of the 50s as well as
-          type chisel. It includes a variable system of logos that reflect a
-          freer and more flexible atmosphere. We designed a series of
-          typographic graphics inspired by fonts and compositions premises of
-          that time. Revolver Bistró creates an environment that allows a
-          genuine and glamorous French restaurant experience.
+          typographic logo is based on the 50s signwriting as well as type
+          chisel. It includes a variable system of logos that reflect a freer
+          and more flexible atmosphere. We designed a series of typographic
+          inspired by fonts and compositions premises of that time. Revolver
+          Bistró creates an environment that allows a genuine and glamorous
+          French restaurant experience.
         </h3>
 
         <div className="py-3">
@@ -224,11 +224,10 @@ class Revolver extends Component {
           The image had to be recognizable. Social networks should gain
           strength. That is why we needed a narrative that was able to reflect
           the design through photography, tone of voice and how the restaurant
-          was going to communicate with the rest. By targeting a mostly female
-          audience, we created that voice, feminine and sociable. Able to
-          empathize with users. This closeness not only guarantees followers but
-          but followers who became real users and who in turn shared content on
-          their networks.
+          was going to communicate. By targeting a mostly female audience, we
+          created that voice, feminine and sociable. Able to empathize with
+          users. This closeness not only guarantees followers but leads who
+          became real users and brand evangelizers.
         </h3>
 
         <video
@@ -273,14 +272,16 @@ class Revolver extends Component {
         <h1 className="pt-5 pb-3">Lean Process</h1>
 
         <h3 className="pb-5">
-          We carry out tastings of new dishes. The continuous rotation of the
-          ingredients of the season, the influence of the sales, generates
-          constant iteration of the menu. In my case, in collaboration with the
-          kitchen team, I made 4 dishes incorporating the vegetarian option,
-          which are currently on the menu. I also worked as a hostess to
-          understand how the user perceived the place from the first moment. In
-          this way, it's not only design for the final consumer, but also those
-          who prepare, administer and offer the service.
+          We carry out tastings of new dishes. The continuous season ingredients
+          rotation and the dishes that are sold the least, generates constant
+          change in the menu.
+          <br />
+          <br />I personally created 4 dishes in collaboration with the kitchen
+          staff, incorporating the vegetarian option, which are until this day
+          on the menu . I also worked as a hostess to understand how the user
+          perceived the place from the first moment. In this way, it's not only
+          design for the final consumer, but also those who prepare, administer
+          and offer the service.
         </h3>
 
         <div className="py-3">
@@ -293,9 +294,9 @@ class Revolver extends Component {
 
         <h3 className="py-5">
           With agile principles, such as the Lean methodology, we implement
-          continuous improvements to maintain and improve the quality of the
-          service by building, measurement, and learning. A great part of the
-          work is to be involved and empathize with the user.
+          continuous improvements to maintain and improve the service quality by
+          building, measurement, and learning. A great part of the work is to be
+          involved and empathize with the user.
         </h3>
         <img
           src={`https://firebasestorage.googleapis.com/v0/b/belenewman-9704b.appspot.com/o/cases%2Frevolver%2Fend.png?alt=media&token=6177818c-8427-49be-a0c9-ea38a747726e`}
