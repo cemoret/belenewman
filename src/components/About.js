@@ -35,8 +35,8 @@ class About extends Component {
             experiences for them. Developing a structure with a solid conceptual
             foundation, creating a design with a focus on typography, image,
             color and composition. My job is to be able to communicate and
-            generate content in collaboration with other trades through design.
-            I have good teamwork and problem solving skills. I am interested in
+            generate content in collaboration with other roles through design. I
+            have good teamwork and problem solving skills. I am interested in
             developing emotionally charged projects, through the transfer of
             knowledge, storytelling and thus finding new ways to design.
           </h3>
@@ -59,6 +59,7 @@ class About extends Component {
           <h4>- Illustrator</h4>
           <h4>- InDesign</h4>
           <h4>- Photoshop & Lightroom</h4>
+          <h4>- HTML, CSS & Javascript</h4>
         </div>
 
         <div className="p-5">

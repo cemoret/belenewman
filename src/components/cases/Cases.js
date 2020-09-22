@@ -40,27 +40,33 @@ class Cases extends Component {
     const { cases } = this.state;
 
     return cases.map(({ name, link, image }, index) => {
-      // const { listNumber, listSelected } = this.state;
+      const { listNumber, listSelected } = this.state;
       return (
         <div
           key={index}
-          className="col-md-6 col-12 pt-3 pb-5"
+          className="col-md-6 col-12 px-0 text-center"
           onMouseEnter={() => this.onMouseEnterLi(index)}
           onMouseLeave={() => this.onMouseLeaveLi()}
         >
           <Link to={link}>
-            <img src={image} className="img-case" alt="gallery" />
-            <h3 className="text-center m-0 pt-3">{name}</h3>
-            <h5 className="text-center m-0 pt-1">Case Study</h5>
-            {/*<h4 className="m-0 p-1">
+            <div className="h100vh-case">
+              <img src={image} className="img-case" alt="gallery" />
               {listNumber === index || listSelected === index ? (
-                <span>→&nbsp;</span>
+                <div className="text-case">
+                  <span className="h3">↗&nbsp;&nbsp;</span>
+                  <h3 className="inline-block link">{name}</h3>
+                </div>
               ) : (
-                <span />
+                <div className="text-case">
+                  <span className="h3">↗&nbsp;&nbsp;</span>
+                  <h3 className="inline-block link">{name}</h3>
+                </div>
               )}
-              ({index + 1})&nbsp;
-              {name}
-            </h4>*/}
+              {/*<div className="text-case">
+                <h3 className="text-center m-0 pt-3">{name}</h3>
+                <h5 className="text-center m-0 pt-1">Case Study</h5>
+              </div>*/}
+            </div>
           </Link>
         </div>
       );
@@ -83,9 +89,11 @@ class Cases extends Component {
           </div>
 
           <div className="col-md-11 col-12 px-0 pb-50 pt-50" id="scrolly">
-            <div className="row m-0 pw-5">
+            <div className="row m-0">
               {this.renderCases()}
-              <Footer />
+              <div className="pl-4">
+                <Footer />
+              </div>
             </div>
           </div>
           <div
